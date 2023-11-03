@@ -1,0 +1,55 @@
+.count__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  background-color: @basic-almost__white;
+  padding: 5px 0 5px 0;
+}
+
+.count__button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  margin: 0 10px 0 10px;
+}
+
+.count__quantity {
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.count__minus {
+  &::before {
+    content: '';
+    display: block;
+    width: 11px;
+    height: 2px;
+    background-color: @basic-black;
+  }
+}
+
+.count__plus {
+  position: relative;
+
+  &::before {
+    content: '';
+    display: block;
+    width: 11px;
+    height: 2px;
+    background-color: @basic-black;
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    width: 2px;
+    height: 11px;
+    background-color: @basic-black;
+    position: absolute;
+    top: -4px;
+    left: -5px;
+  }
+}

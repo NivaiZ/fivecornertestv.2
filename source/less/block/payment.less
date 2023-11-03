@@ -1,0 +1,37 @@
+.payment__input {
+  width: 0;
+  height: 0;
+}
+
+.payment__input:checked+.payment__label::before {
+  background: radial-gradient(circle, #000 0, #000 35%, transparent 50%, transparent 100%);
+}
+
+.payment__label {
+  position: relative;
+  padding-left: 50px;
+  font-size: 16px;
+  line-height: 21px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: calc(50% - 12px);
+    width: 22px;
+    height: 22px;
+    border: 1px solid @basic-silver;
+    background-color: @basic-white;
+    border-radius: 50%;
+  }
+}
+
+.payment__item {
+  margin-bottom: 21px;
+}
+
+.payment__heading {
+  font-size: 28px;
+  line-height: 30px;
+  margin: 40px 0;
+}

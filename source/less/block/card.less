@@ -1,0 +1,108 @@
+.card__size {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  background-color: @basic-almost__white;
+  padding: 11px;
+  cursor: pointer;
+  border: none;
+  width: 30px;
+  height: 30px;
+}
+
+.card__sign {
+  font-size: 12px;
+  line-height: 15px;
+  color: @basic-black;
+}
+
+.card__list--row {
+  display: flex;
+}
+
+.card__item--margin {
+  margin-right: 5px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.card__wrapper {
+  display: flex;
+}
+
+.card__img {
+  width: 130px;
+  height: 160px;
+  object-fit: contain;
+}
+
+.card__caption {
+  color: @basic-black;
+  font-size: 20px;
+  line-height: 24px;
+  margin: 0 0 15px 0;
+  width: 197px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card__significance {
+  font-size: 12px;
+  line-height: 15px;
+  color: @basic-grey;
+}
+
+.card__number {
+  color: @basic-black;
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 700;
+}
+
+.card__item--row {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  justify-items: center;
+  padding: 25px 0 25px 0;
+  position: relative;
+  border-top: 1px solid @basic-gray;
+  border-bottom: 1px solid @basic-gray;
+  min-height: 160px;
+}
+
+.card__wrapper--column {
+  display: flex;
+  flex-direction: column;
+  margin-left: 12px;
+  margin-right: 35px;
+}
+
+.card__count {
+  min-width: 153px;
+  margin: 0 30px;
+}
+
+.card__block {
+  margin-top: 7px;
+}
+
+.card__price {
+  display: grid;
+  grid-auto-columns: max-content;
+}
+
+.card__inner {
+  margin: 5px 0 5px 0;
+}
+
+.card__size--js {
+  transition: 0.5s ease;
+  background-color: @basic-black;
+
+  .card__sign {
+    color: @basic-white;
+  }
+}

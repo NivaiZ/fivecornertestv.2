@@ -1,0 +1,155 @@
+.total {
+  outline: 1px solid @basic-grey;
+  width: 100%;
+  height: min-content;
+  padding: 30px 20px 30px 20px;
+  margin-top: 100px;
+}
+
+.total__list {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 5px;
+}
+
+.total__item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.total__price--sale {
+  color: @basic-red;
+}
+
+.total__price {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.total__text {
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+
+.total__small {
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.total__list--border {
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: block;
+    border-bottom: 1px solid @basic-gray;
+  }
+}
+
+.total__item--column {
+  flex-direction: column;
+}
+
+.total__list--row {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding: 20px 0 20px 0;
+
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: block;
+    border-bottom: 1px solid @basic-gray;
+  }
+}
+
+.total__checkbox {
+  opacity: 0;
+  pointer-events: none;
+  height: 0;
+}
+
+.total__label {
+  position: relative;
+  display: flex;
+  width: 41px;
+  height: 15px;
+}
+
+.total__slider {
+  background-color: @basic-gray;
+  opacity: 0.5;
+  border-radius: 50px;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: .4s;
+
+  &::before {
+    background-color: @basic-grey;
+    bottom: 0;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 0;
+    position: absolute;
+    transition: .4s;
+    border-radius: 50%;
+  }
+}
+
+.total__checkbox:checked+.total__slider {
+  background-color: #66bb6a;
+}
+
+.total__checkbox:checked+.total__slider::before {
+  transform: translateX(26px);
+}
+
+.total__input {
+  border: 1px solid @basic-gray;
+  padding: 15px 20px 15px 20px;
+  width: 100%;
+}
+
+.total__send {
+  background-color: @basic-black;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  padding: 15px 70px 15px 70px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.total__span {
+  color: @basic-white;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.total__strong {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 30px;
+  margin: 25px 0 25px 0;
+}
+
+.total__map {
+  position: absolute;
+  width: 400px;
+  height: 450px;
+  top: 0;
+  left: calc(100% + 40px);
+}

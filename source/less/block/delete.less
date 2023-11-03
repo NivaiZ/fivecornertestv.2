@@ -1,0 +1,33 @@
+.delete__button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  width: 30px;
+  height: 15px;
+}
+
+.delete__symbol {
+  position: relative;
+  display: flex;
+
+  &::before {
+    display: block;
+    content: '';
+    background-color: @basic-black;
+    width: 20px;
+    height: 2px;
+    transform: rotate(-45deg);
+    position: absolute;
+  }
+
+  &::after {
+    display: block;
+    content: '';
+    background-color: @basic-black;
+    width: 20px;
+    height: 2px;
+    transform: rotate(45deg);
+    position: absolute;
+  }
+}
